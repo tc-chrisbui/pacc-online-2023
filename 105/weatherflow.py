@@ -28,7 +28,7 @@ def fetch_weather(lat: float, lon: float):
         base_url,
         params=dict(latitude=lat, longitude=lon, hourly="temperature_2m"),
     )
-    most_recent_temp = float(weather.json()["hourly"]["temperature_2m"][0])
+    most_recent_temp = 5
     mark_it_down(most_recent_temp)
 
 
